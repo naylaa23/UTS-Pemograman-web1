@@ -1,0 +1,322 @@
+/* ================================
+   SOFT PASTEL THEME
+=================================*/
+:root {
+    --primary: #3299e8;         
+    --primary-light: #da7de3;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --text: #334155;
+    --radius: 14px;
+    --shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ================================
+   LOGIN PAGE (PASTEL, NON-NYATU)
+=================================*/
+body.login-page {
+    background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: var(--white);
+    width: 350px;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius);
+    border: 1px solid #cbd5e1;
+    background: #f1f5f9;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius);
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: var(--primary-light);
+}
+
+.error-msg {
+    text-align: center;
+    color: #ba0909;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ================================
+   SIDEBAR (WHITE, SOFT SHADOW)
+=================================*/
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: fixed;
+    padding-top: 30px;
+}
+
+.sidebar-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    margin: 5px 15px;
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #ede9fe;
+    color: var(--primary);
+}
+
+/* ================================
+   CONTENT
+=================================*/
+.content {
+    margin-left: 260px;
+    padding: 40px;
+}
+
+/* ================================
+   DASHBOARD CARDS (PASTEL)
+=================================*/
+.summary-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ================================
+   TABLE (PASTEL CLEAN)
+=================================*/
+.table {
+    width: 100%;
+    background: var(--white);
+    border-collapse: collapse;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.table th {
+    background: #ede9fe;
+    color: var(--primary);
+    padding: 14px;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tr:hover {
+    background: #f3f0ff;
+}
+
+/* ================================
+   ACTION BUTTONS — SOFT PASTEL
+=================================*/
+.btn-edit {
+    padding: 8px 12px;
+    border: none;
+    border-radius: var(--radius);
+    background: #fef3c7;  
+    color: #b45309;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background: #f1e09e;
+}
+
+.btn-delete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: var(--radius);
+    background: #fee2e2;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: #eb8080;
+}
+
+/* ======================================================
+   SORT BUTTON STYLE (TOMBOL UTAMANYAAAAAAAA)
+======================================================*/
+.sort-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sort-by-btn {
+    padding: 10px 20px;
+    background: #ede9fe;
+    border-radius: var(--radius);
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.sort-by-btn:hover {
+    background: #ddd6fe;
+}
+
+/* ======================================================
+   SORT POPUP (BY NAME / BY PRICE)
+======================================================*/
+.sort-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 10px 0;
+    width: 180px;
+    z-index: 10;
+}
+
+.sort-menu div {
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sort-menu div:hover {
+    background: #f3f0ff;
+    color: var(--primary);
+}
+
+.sort-menu div span {
+    float: right;
+    opacity: 0.7;
+}
+
+/* ============================
+   SORT MENU
+============================ */
+.sort-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sort-by-btn {
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    background: #ede9fe;
+    color: var(--primary);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sort-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    display: none;
+    width: 180px;
+    padding: 8px 0;
+    z-index: 50;
+}
+
+.sort-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sort-item:hover {
+    background: #f3f0ff;
+    color: var(--primary);
+}

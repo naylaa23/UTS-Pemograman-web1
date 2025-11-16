@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <div class="sidebar">
+        <h2 class="sidebar-title">Menu</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="products.html">Data Produk</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Dashboard</h1>
+
+        <div class="summary-container">
+            <div class="card">
+                <h3>Total Produk</h3>
+                <p id="totalProducts">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Penjualan</h3>
+                <p id="totalSales">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">0</p>
+            </div>
+        </div>
+
+        <button id="btnProducts" class="btn">
+            Lihat Data Produk
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
