@@ -4,8 +4,8 @@ Nama : Nayla Zalfa Zahiyah
 NIM : 24090017
 
 # Link Project
-Link GitHub Repository :
-Link GitHub Pages :
+Link GitHub Repository :https://github.com/naylaa23/UTS-Pemograman-web1
+Link GitHub Pages :https://naylaa23.github.io/UTS-Pemograman-web1/
 
 # Halaman Login (Index HTML)
 Fungsi:
